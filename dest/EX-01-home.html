@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="Home" />
+    <meta name="keywords" content="Home" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="icon" href="/logo-fav.png" />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo"><a class="logo__link" href="#"><img class="logo__image" src="../images/logo.png" alt="Beagle logo" /></a></div>
+      <div class="header__title">Dashboard</div>
+      <div class="header__more">
+        <ul class="nav navbar-nav header__nav">
+          <li class="nav-item dropdown"><a class="nav-link js-toggle-setting" href="#" role="button"><i class="zmdi zmdi-settings"></i></a></li>
+          <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false" data-display="static"><i class="zmdi zmdi-notifications"></i><span class="indicator"></span></a>
+            <div class="dropdown-menu notifications"><span class="dropdown-menu-arrow"></span>
+              <div class="notifications__title"><span>Notifications</span><span class="notifications__amount">3</span></div>
+              <div class="notifications__content js-scroller-notifications"><a class="dropdown-item notification unread" href="#">
+                  <div class="user-avatar"><img class="user-avatar__img" src="../images/avatar2.png" alt="user avatar" /></div>
+                  <div class="notification__info">
+                    <p class="notification__content"><span class="user-name">Jessica Caruso</span>accepted your invitation to join the team.</p><span class="date">2 min ago</span>
+                  </div>
+                </a><a class="dropdown-item notification" href="#">
+                  <div class="user-avatar"><img class="user-avatar__img" src="../images/avatar3.png" alt="user avatar" /></div>
+                  <div class="notification__info">
+                    <p class="notification__content"><span class="user-name">Joel King</span>is now following you</p><span class="date">2 days ago</span>
+                  </div>
+                </a><a class="dropdown-item notification" href="#">
+                  <div class="user-avatar"><img class="user-avatar__img" src="../images/avatar4.png" alt="user avatar" /></div>
+                  <div class="notification__info">
+                    <p class="notification__content"><span class="user-name">John Doe</span>is watching your main repository</p><span class="date">2 days ago</span>
+                  </div>
+                </a><a class="dropdown-item notification" href="#">
+                  <div class="user-avatar"><img class="user-avatar__img" src="../images/avatar5.png" alt="user avatar" /></div>
+                  <div class="notification__info">
+                    <p class="notification__content"><span class="user-name">Emily Carter</span>is now following you</p><span class="date">5 days ago</span>
+                  </div>
+                </a>
+              </div>
+              <div class="notifications__all"><a class="notifications__view-all" href="#">View all notifications</a></div>
+            </div>
+          </li>
+          <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false" data-display="static"><i class="zmdi zmdi-apps"></i></a>
+            <div class="dropdown-menu applications"><span class="dropdown-menu-arrow"></span>
+              <div class="applications__content">
+                <div class="application"><a class="application__link" href="#"><img class="application__img" src="../images/github.png" alt="GitHub" /><span class="application__name">GitHub</span></a></div>
+                <div class="application"><a class="application__link" href="#"><img class="application__img" src="../images/bitbucket.png" alt="Bitbucket" /><span class="application__name">Bitbucket</span></a></div>
+                <div class="application"><a class="application__link" href="#"><img class="application__img" src="../images/slack.png" alt="Slack" /><span class="application__name">Slack</span></a></div>
+                <div class="application"><a class="application__link" href="#"><img class="application__img" src="../images/dribbble.png" alt="Dribbble" /><span class="application__name">Dribbble</span></a></div>
+                <div class="application"><a class="application__link" href="#"><img class="application__img" src="../images/mail_chimp.png" alt="Mail Chimp" /><span class="application__name">Mail Chimp</span></a></div>
+                <div class="application"><a class="application__link" href="#"><img class="application__img" src="../images/dropbox.png" alt="Dropbox" /><span class="application__name">Dropbox</span></a></div>
+              </div>
+              <div class="applications__more"><a href="#">More</a></div>
+            </div>
+          </li>
+        </ul>
+        <div class="dropdown user-account">
+          <button class="dropdown-toggle user-account__button" type="button" data-toggle="dropdown" aria-expanded="false" data-display="static"><span class="user-avatar user-avatar--sm"><img class="user-avatar__img" src="../images/avatar5.png" alt="user" /></span></button>
+          <div class="dropdown-menu"><span class="dropdown-menu-arrow"></span>
+            <div class="user-account__info">
+              <div class="user-account__name">Túpac Amaru</div>
+              <div class="user-account__position">Available</div>
+            </div><a class="dropdown-item user-account__item" href="#"><i class="user-account__icon zmdi zmdi-face"></i><span>Account</span></a><a class="dropdown-item user-account__item" href="#"><i class="user-account__icon zmdi zmdi-settings"></i><span>Settings</span></a><a class="dropdown-item user-account__item" href="#"><i class="user-account__icon zmdi zmdi-power"></i><span>Logout</span></a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <nav class="navbar flex-column navbar-expand-md left-sidebar" id="sidebarAccordion">
+      <div class="navbar-collapse collapse" id="sidebarCollapse">
+        <div class="left-sidebar__content js-scroll-left-sidebar">
+          <h3 class="navbar__heading">Menu</h3>
+          <ul class="navbar-nav flex-column">
+            <li class="nav-item active"><a class="nav-link" href="javascript:void(0)"><i class="nav-icon zmdi zmdi-home"></i>Dashboard</a>
+            </li>
+            <li class="nav-item js-collapse-submenu"><a class="nav-link" href="#sidbarUiElement" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidbarUiElement"><i class="nav-icon zmdi zmdi-face"></i>UI Elements</a>
+              <div class="collapse" id="sidbarUiElement" data-parent="#sidebarAccordion">
+                <ul class="nav submenu">
+                  <li class="nav-item"><a class="nav-link nav-link--level-1" href="javascript:void(0)">Alerts</a>
+                  </li>
+                  <li class="nav-item"><a class="nav-link nav-link--level-1" href="javascript:void(0)">Buttons</a>
+                  </li>
+                  <li class="nav-item"><a class="nav-link nav-link--level-1" href="javascript:void(0)">Cards<span class="badge ml-auto badge--primary">New</span></a>
+                  </li>
+                  <li class="nav-item"><a class="nav-link nav-link--level-1" href="javascript:void(0)">Panels</a>
+                  </li>
+                  <li class="nav-item"><a class="nav-link nav-link--level-1" href="javascript:void(0)">General</a>
+                  </li>
+                  <li class="nav-item"><a class="nav-link nav-link--level-1" href="javascript:void(0)">Modals</a>
+                  </li>
+                  <li class="nav-item"><a class="nav-link nav-link--level-1" href="javascript:void(0)">Notifications</a>
+                  </li>
+                  <li class="nav-item"><a class="nav-link nav-link--level-1" href="javascript:void(0)">Icons</a>
+                  </li>
+                  <li class="nav-item"><a class="nav-link nav-link--level-1" href="javascript:void(0)">Grid</a>
+                  </li>
+                  <li class="nav-item"><a class="nav-link nav-link--level-1" href="javascript:void(0)">Tabs &amp; Accordions</a>
+                  </li>
+                  <li class="nav-item"><a class="nav-link nav-link--level-1" href="javascript:void(0)">Nestable Lists</a>
+                  </li>
+                  <li class="nav-item"><a class="nav-link nav-link--level-1" href="javascript:void(0)">Typography</a>
+                  </li>
+                  <li class="nav-item"><a class="nav-link nav-link--level-1" href="javascript:void(0)">Drag &amp; Drop<span class="badge ml-auto badge--primary">New</span></a>
+                  </li>
+                  <li class="nav-item"><a class="nav-link nav-link--level-1" href="javascript:void(0)">Sweetalert 2<span class="badge ml-auto badge--primary">New</span></a>
+                  </li>
+                  <li class="nav-item"><a class="nav-link nav-link--level-1" href="#">Orders</a>
+                  </li>
+                  <li class="nav-item"><a class="nav-link nav-link--level-1" href="#">Feed</a>
+                  </li>
+                  <li class="nav-item"><a class="nav-link nav-link--level-1" href="#">Settings</a>
+                  </li>
+                  <li class="nav-item"><a class="nav-link nav-link--level-1" href="#">Invoice</a>
+                  </li>
+                  <li class="nav-item"><a class="nav-link nav-link--level-1" href="#">Pricing</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item js-collapse-submenu"><a class="nav-link" href="#sidbarChart" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidbarChart"><i class="nav-icon zmdi zmdi-chart-donut"></i>Charts</a>
+              <div class="collapse" id="sidbarChart" data-parent="#sidebarAccordion">
+                <ul class="nav submenu">
+                  <li class="nav-item"><a class="nav-link nav-link--level-1" href="javascript:void(0)">Flot</a>
+                  </li>
+                  <li class="nav-item"><a class="nav-link nav-link--level-1" href="javascript:void(0)">Sparklines</a>
+                  </li>
+                  <li class="nav-item"><a class="nav-link nav-link--level-1" href="javascript:void(0)">Chart.js</a>
+                  </li>
+                  <li class="nav-item"><a class="nav-link nav-link--level-1" href="javascript:void(0)">Morris.js</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item js-collapse-submenu"><a class="nav-link" href="#sidbarForm" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidbarForm"><i class="nav-icon zmdi zmdi-dot-circle"></i>Forms</a>
+              <div class="collapse" id="sidbarForm" data-parent="#sidebarAccordion">
+                <ul class="nav submenu">
+                  <li class="nav-item"><a class="nav-link nav-link--level-1" href="javascript:void(0)">Elements</a>
+                  </li>
+                  <li class="nav-item"><a class="nav-link nav-link--level-1" href="javascript:void(0)">Validation</a>
+                  </li>
+                  <li class="nav-item"><a class="nav-link nav-link--level-1" href="javascript:void(0)">Multiselect</a>
+                  </li>
+                  <li class="nav-item"><a class="nav-link nav-link--level-1" href="javascript:void(0)">Wizard</a>
+                  </li>
+                  <li class="nav-item"><a class="nav-link nav-link--level-1" href="javascript:void(0)">Input Masks</a>
+                  </li>
+                  <li class="nav-item"><a class="nav-link nav-link--level-1" href="javascript:void(0)">WYSIWYG Editor</a>
+                  </li>
+                  <li class="nav-item"><a class="nav-link nav-link--level-1" href="javascript:void(0)">Multi Upload</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item js-collapse-submenu"><a class="nav-link" href="#sidbarTable" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidbarTable"><i class="nav-icon zmdi zmdi-border-all"></i>Tables</a>
+              <div class="collapse" id="sidbarTable" data-parent="#sidebarAccordion">
+                <ul class="nav submenu">
+                  <li class="nav-item"><a class="nav-link nav-link--level-1" href="javascript:void(0)">General</a>
+                  </li>
+                  <li class="nav-item"><a class="nav-link nav-link--level-1" href="javascript:void(0)">Data Tables</a>
+                  </li>
+                  <li class="nav-item"><a class="nav-link nav-link--level-1" href="javascript:void(0)">Table Filters<span class="badge ml-auto badge--primary">New</span></a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item js-collapse-submenu"><a class="nav-link" href="#sidbarPage" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidbarPage"><i class="nav-icon zmdi zmdi-layers"></i>Pages</a>
+              <div class="collapse" id="sidbarPage" data-parent="#sidebarAccordion">
+                <ul class="nav submenu">
+                  <li class="nav-item"><a class="nav-link nav-link--level-1" href="javascript:void(0)">Blank Page</a>
+                  </li>
+                  <li class="nav-item"><a class="nav-link nav-link--level-1" href="javascript:void(0)">Blank Page Header</a>
+                  </li>
+                  <li class="nav-item"><a class="nav-link nav-link--level-1" href="javascript:void(0)">Login</a>
+                  </li>
+                  <li class="nav-item"><a class="nav-link nav-link--level-1" href="javascript:void(0)">Login v2</a>
+                  </li>
+                  <li class="nav-item"><a class="nav-link nav-link--level-1" href="javascript:void(0)">404 Page</a>
+                  </li>
+                  <li class="nav-item"><a class="nav-link nav-link--level-1" href="javascript:void(0)">Sign Up</a>
+                  </li>
+                  <li class="nav-item"><a class="nav-link nav-link--level-1" href="javascript:void(0)">Forgot Password</a>
+                  </li>
+                  <li class="nav-item"><a class="nav-link nav-link--level-1" href="javascript:void(0)">Profile</a>
+                  </li>
+                  <li class="nav-item"><a class="nav-link nav-link--level-1" href="javascript:void(0)">Pricing Tables</a>
+                  </li>
+                  <li class="nav-item"><a class="nav-link nav-link--level-1" href="javascript:void(0)">Pricing Tables v2</a>
+                  </li>
+                  <li class="nav-item"><a class="nav-link nav-link--level-1" href="javascript:void(0)">Timeline</a>
+                  </li>
+                  <li class="nav-item"><a class="nav-link nav-link--level-1" href="javascript:void(0)">Timeline v2</a>
+                  </li>
+                  <li class="nav-item"><a class="nav-link nav-link--level-1" href="javascript:void(0)">Invoice<span class="badge ml-auto badge--primary">New</span></a>
+                  </li>
+                  <li class="nav-item"><a class="nav-link nav-link--level-1" href="javascript:void(0)">Calendar</a>
+                  </li>
+                  <li class="nav-item"><a class="nav-link nav-link--level-1" href="javascript:void(0)">Gallery</a>
+                  </li>
+                  <li class="nav-item"><a class="nav-link nav-link--level-1" href="javascript:void(0)">Code Editor<span class="badge ml-auto badge--primary">New</span></a>
+                  </li>
+                  <li class="nav-item"><a class="nav-link nav-link--level-1" href="javascript:void(0)">Booking<span class="badge ml-auto badge--primary">New</span></a>
+                  </li>
+                  <li class="nav-item"><a class="nav-link nav-link--level-1" href="javascript:void(0)">Loaders<span class="badge ml-auto badge--primary">New</span></a>
+                  </li>
+                  <li class="nav-item"><a class="nav-link nav-link--level-1" href="javascript:void(0)">AJAX Loader<span class="badge ml-auto badge--primary">New</span></a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+          <h3 class="navbar__heading">Features</h3>
+          <ul class="navbar-nav flex-column">
+            <li class="nav-item js-collapse-submenu"><a class="nav-link" href="#sidbarEmail" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidbarEmail"><i class="nav-icon zmdi zmdi-inbox"></i>Email</a>
+              <div class="collapse" id="sidbarEmail" data-parent="#sidebarAccordion">
+                <ul class="nav submenu">
+                  <li class="nav-item"><a class="nav-link nav-link--level-1" href="javascript:void(0)">Inbox</a>
+                  </li>
+                  <li class="nav-item"><a class="nav-link nav-link--level-1" href="javascript:void(0)">Email Detail</a>
+                  </li>
+                  <li class="nav-item"><a class="nav-link nav-link--level-1" href="javascript:void(0)">Email Compose</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item js-collapse-submenu"><a class="nav-link" href="#sidbarEmail" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidbarEmail"><i class="nav-icon zmdi zmdi-view-web"></i>Layouts</a>
+              <div class="collapse" id="sidbarEmail" data-parent="#sidebarAccordion">
+                <ul class="nav submenu">
+                  <li class="nav-item"><a class="nav-link nav-link--level-1" href="javascript:void(0)">Primary Header</a>
+                  </li>
+                  <li class="nav-item"><a class="nav-link nav-link--level-1" href="javascript:void(0)">Success Header</a>
+                  </li>
+                  <li class="nav-item"><a class="nav-link nav-link--level-1" href="javascript:void(0)">Warning Header</a>
+                  </li>
+                  <li class="nav-item"><a class="nav-link nav-link--level-1" href="javascript:void(0)">Danger Header</a>
+                  </li>
+                  <li class="nav-item"><a class="nav-link nav-link--level-1" href="javascript:void(0)">Search Input</a>
+                  </li>
+                  <li class="nav-item"><a class="nav-link nav-link--level-1" href="javascript:void(0)">Off Canvas Menu</a>
+                  </li>
+                  <li class="nav-item"><a class="nav-link nav-link--level-1" href="javascript:void(0)">Top Menu<span class="badge ml-auto badge--primary">New</span></a>
+                  </li>
+                  <li class="nav-item"><a class="nav-link nav-link--level-1" href="javascript:void(0)">Without Left Sidebar</a>
+                  </li>
+                  <li class="nav-item"><a class="nav-link nav-link--level-1" href="javascript:void(0)">Without Right Sidebar</a>
+                  </li>
+                  <li class="nav-item"><a class="nav-link nav-link--level-1" href="javascript:void(0)">Without Both Sidebars</a>
+                  </li>
+                  <li class="nav-item"><a class="nav-link nav-link--level-1" href="javascript:void(0)">Fixed Left Sidebar</a>
+                  </li>
+                  <li class="nav-item"><a class="nav-link nav-link--level-1" href="javascript:void(0)">Boxed Layout<span class="badge ml-auto badge--primary">New</span></a>
+                  </li>
+                  <li class="nav-item"><a class="nav-link nav-link--level-1" href="javascript:void(0)">Page Aside</a>
+                  </li>
+                  <li class="nav-item"><a class="nav-link nav-link--level-1" href="javascript:void(0)">Collapsible Sidebar</a>
+                  </li>
+                  <li class="nav-item"><a class="nav-link nav-link--level-1" href="javascript:void(0)">Sub Navigation<span class="badge ml-auto badge--primary">New</span></a>
+                  </li>
+                  <li class="nav-item"><a class="nav-link nav-link--level-1" href="javascript:void(0)">Mega Menu<span class="badge ml-auto badge--primary">New</span></a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item js-collapse-submenu"><a class="nav-link" href="#sidbarMap" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidbarMap"><i class="nav-icon zmdi zmdi-pin"></i>Maps</a>
+              <div class="collapse" id="sidbarMap" data-parent="#sidebarAccordion">
+                <ul class="nav submenu">
+                  <li class="nav-item"><a class="nav-link nav-link--level-1" href="javascript:void(0)">Google Maps</a>
+                  </li>
+                  <li class="nav-item"><a class="nav-link nav-link--level-1" href="javascript:void(0)">Vector Maps</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item js-collapse-submenu"><a class="nav-link" href="#sidbarLevel" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidbarLevel"><i class="nav-icon zmdi zmdi-folder"></i>Menu Levels</a>
+              <div class="collapse" id="sidbarLevel" data-parent="#sidebarAccordion">
+                <ul class="nav submenu">
+                  <li class="nav-item"><a class="nav-link nav-link--level-1" href="#sidbarLevel1-1" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidbarLevel1-1">Level 1</a>
+                    <div class="collapse" id="sidbarLevel1-1">
+                      <ul class="nav childmenu">
+                        <li class="nav-item"><a class="nav-link nav-link--level-2" href="javascript:void(0)">Level 2</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link nav-link--level-2" href="#sidbarLevel2-2" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidbarLevel2-2">Level 2</a>
+                          <div class="collapse" id="sidbarLevel2-2">
+                            <ul class="nav childmenu">
+                              <li class="nav-item"></li><a class="nav-link nav-link--level-3" href="#">Level 3</a>
+                              <li class="nav-item"></li><a class="nav-link nav-link--level-3" href="#">Level 3</a>
+                            </ul>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="nav-item"><a class="nav-link nav-link--level-1" href="#sidbarLevel1-2" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidbarLevel1-2">Level 1</a>
+                    <div class="collapse" id="sidbarLevel1-2">
+                      <ul class="nav childmenu">
+                        <li class="nav-item"><a class="nav-link nav-link--level-2" href="javascript:void(0)">Level 2</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link nav-link--level-2" href="#sidbarLevel2-1-2" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidbarLevel2-1-2">Level 2</a>
+                          <div class="collapse" id="sidbarLevel2-1-2">
+                            <ul class="nav childmenu">
+                              <li class="nav-item"></li><a class="nav-link nav-link--level-3" href="#">Level 3</a>
+                              <li class="nav-item"></li><a class="nav-link nav-link--level-3" href="#">Level 3</a>
+                            </ul>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="javascript:void(0)"><i class="nav-icon zmdi zmdi-book"></i>Documentation</a>
+            </li>
+          </ul>
+        </div>
+        <div class="progress-widget">
+          <div class="progress-widget__info"><span class="progress-widget__title">Current Project</span><span class="progress-widget__value">60%</span></div>
+          <div class="progress progress-widget__progress">
+            <div class="progress-bar progress-widget__progress-bar" style="width: 60%;" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="right-sidebar">
+      <ul class="nav nav-tabs" role="tablist">
+        <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#chat" role="tab" aria-controls="chat" aria-selected="true">Chat</a></li>
+        <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#todo" role="tab" aria-controls="todo" aria-selected="true">Todo</a></li>
+        <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#settings" role="tab" aria-controls="todo" aria-selected="true">Settings</a></li>
+      </ul>
+      <div class="tab-content">
+        <div class="tab-pane fade show active" id="chat" role="tabpanel" aria-labelledby="home-tab">
+          <div class="chat-contact">
+            <div class="chat-contact__content js-scroller-chat-contact">
+              <div class="chat-contact__recent">
+                <h3 class="chat-contact__heading">Recent</h3>
+                <div class="contact-list"><a class="friend" href="#">
+                    <div class="user-avatar user-avatar--xs"><img class="user-avatar__img" src="../images/avatar2.png" alt="Avatar" /></div>
+                    <div class="friend__info"><span class="friend__name">Claire Sassu</span><span class="friend__message">Can you share the ... </span></div><span class="status status--away"></span>
+                  </a><a class="friend" href="#">
+                    <div class="user-avatar user-avatar--xs"><img class="user-avatar__img" src="../images/avatar2.png" alt="Avatar" /></div>
+                    <div class="friend__info"><span class="friend__name">Maggie jackson</span><span class="friend__message">I confirmed the info.</span></div><span class="status"></span>
+                  </a><a class="friend" href="#">
+                    <div class="user-avatar user-avatar--xs"><img class="user-avatar__img" src="../images/avatar3.png" alt="Avatar" /></div>
+                    <div class="friend__info"><span class="friend__name">Joel King</span><span class="friend__message">Ready for the meeting ...</span></div><span class="status status--offline"></span>
+                  </a>
+                </div>
+              </div>
+              <div class="chat-contact__list">
+                <h3 class="chat-contact__heading">Contact</h3>
+                <div class="contact-list"><a class="friend" href="#">
+                    <div class="user-avatar user-avatar--xs"><img class="user-avatar__img" src="../images/avatar4.png" alt="Avatar" /></div>
+                    <div class="friend__info"><span class="friend__name">Mike Bolthort</span></div><span class="status"></span>
+                  </a><a class="friend" href="#">
+                    <div class="user-avatar user-avatar--xs"><img class="user-avatar__img" src="../images/avatar5.png" alt="Avatar" /></div>
+                    <div class="friend__info"><span class="friend__name">Maggie jackson</span></div><span class="status"></span>
+                  </a><a class="friend" href="#">
+                    <div class="user-avatar user-avatar--xs"><img class="user-avatar__img" src="../images/avatar6.png" alt="Avatar" /></div>
+                    <div class="friend__info"><span class="friend__name">Jhon Voltemar</span></div><span class="status status--offline"></span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="chat-contact__search">
+              <input class="chat-contact__input" type="text" placeholder="Search..." /><span class="chat-contact__search-icon zmdi zmdi-search"></span>
+            </div>
+          </div>
+          <div class="chat-window">
+            <div class="chat-window__content">
+              <div class="chat-window__title"><i class="zmdi zmdi-chevron-left"></i>
+                <div class="partner-chat">
+                  <div class="partner-chat__info">
+                    <div class="partner-chat__name">Maggie jackson</div>
+                    <div class="partner-chat__status">Active 1h ago</div>
+                  </div>
+                  <div class="user-avatar"><img class="user-avatar__img" src="../images/avatar2.png" alt="avatar" /></div>
+                </div>
+              </div>
+              <ul class="chat-window__message">
+                <li class="friend-message">Hello</li>
+                <li class="self-message">Hi, how are you?</li>
+                <li class="friend-message">Good, I'll need support with my pc</li>
+                <li class="self-message">Sure, just tell me what is going on with your computer?</li>
+                <li class="friend-message">I don't know it just turns off suddenly</li>
+              </ul>
+            </div>
+            <div class="chat-window__create-message"><i class="zmdi zmdi-camera"></i>
+              <input type="text" placeholder="Message..." /><i class="zmdi zmdi-mail-send"></i>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade todo" id="todo" role="tabpanel" aria-labelledby="todo-tab">
+          <div class="todo">
+            <div class="todo__content js-scroller-todo">
+              <div class="todo__today">
+                <h3 class="todo__heading">Today</h3>
+                <div class="todo__list">
+                  <div class="form-group custom-checkbox custom-checkbox--line-through"><i class="custom-checkbox__icon zmdi zmdi-delete"></i>
+                    <input class="custom-checkbox__input" type="checkbox" id="today-1" checked="checked" />
+                    <label class="custom-checkbox__label" for="today-1">Initialize the project</label>
+                  </div>
+                  <div class="form-group custom-checkbox custom-checkbox--line-through"><i class="custom-checkbox__icon zmdi zmdi-delete"></i>
+                    <input class="custom-checkbox__input" type="checkbox" id="today-2" />
+                    <label class="custom-checkbox__label" for="today-2">Create the main structure</label>
+                  </div>
+                  <div class="form-group custom-checkbox custom-checkbox--line-through"><i class="custom-checkbox__icon zmdi zmdi-delete"></i>
+                    <input class="custom-checkbox__input" type="checkbox" id="today-3" />
+                    <label class="custom-checkbox__label" for="today-3">Updates changes to GitHub</label>
+                  </div>
+                </div>
+              </div>
+              <div class="todo__tomorrow">
+                <h3 class="todo__heading">Tomorrow</h3>
+                <div class="todo__list">
+                  <div class="form-group custom-checkbox custom-checkbox--line-through"><i class="custom-checkbox__icon zmdi zmdi-delete"></i>
+                    <input class="custom-checkbox__input" type="checkbox" id="tomorrow-1" />
+                    <label class="custom-checkbox__label" for="tomorrow-1">Initialize the project</label>
+                  </div>
+                  <div class="form-group custom-checkbox custom-checkbox--line-through"><i class="custom-checkbox__icon zmdi zmdi-delete"></i>
+                    <input class="custom-checkbox__input" type="checkbox" id="tomorrow-2" />
+                    <label class="custom-checkbox__label" for="tomorrow-2">Create the main structure</label>
+                  </div>
+                  <div class="form-group custom-checkbox custom-checkbox--line-through"><i class="custom-checkbox__icon zmdi zmdi-delete"></i>
+                    <input class="custom-checkbox__input" type="checkbox" id="tomorrow-3" />
+                    <label class="custom-checkbox__label" for="tomorrow-3">Updates changes to GitHub</label>
+                  </div>
+                  <div class="form-group custom-checkbox custom-checkbox--line-through"><i class="custom-checkbox__icon zmdi zmdi-delete"></i>
+                    <input class="custom-checkbox__input" type="checkbox" id="tomorrow-4" />
+                    <label class="custom-checkbox__label" for="tomorrow-4">This task is too long to be displayed in a normal space!</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="todo__new-task">
+              <input class="todo__task-input" type="text" placeholder="Create new task..." /><span class="todo__icon zmdi zmdi-plus"></span>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade settings" id="settings" role="tabpanel" aria-labelledby="setting-tab">
+          <div class="setting">
+            <div class="setting__content js-scroller-setting">
+              <div class="setting__general">
+                <div class="setting__heading">General</div>
+                <ul class="setting__list">
+                  <li class="setting__item"><span>Available</span>
+                    <label class="switcher-control">
+                      <input class="switcher-input" type="checkbox" checked="checked" /><span class="switcher-indicator"></span><span class="switcher-label--on">ON</span><span class="switcher-label--off">OFF</span>
+                    </label>
+                  </li>
+                  <li class="setting__item"><span>Enable notifications</span>
+                    <label class="switcher-control">
+                      <input class="switcher-input" type="checkbox" checked="checked" /><span class="switcher-indicator"></span><span class="switcher-label--on">ON</span><span class="switcher-label--off">OFF</span>
+                    </label>
+                  </li>
+                  <li class="setting__item"><span>Login with Facebook</span>
+                    <label class="switcher-control">
+                      <input class="switcher-input" type="checkbox" checked="checked" /><span class="switcher-indicator"></span><span class="switcher-label--on">ON</span><span class="switcher-label--off">OFF</span>
+                    </label>
+                  </li>
+                </ul>
+              </div>
+              <div class="setting__notifications">
+                <div class="setting__heading">Notifications</div>
+                <ul class="setting__list">
+                  <li class="setting__item"><span>Email notifications</span>
+                    <label class="switcher-control">
+                      <input class="switcher-input" type="checkbox" /><span class="switcher-indicator"></span><span class="switcher-label--on">ON</span><span class="switcher-label--off">OFF</span>
+                    </label>
+                  </li>
+                  <li class="setting__item"><span>Project updates</span>
+                    <label class="switcher-control">
+                      <input class="switcher-input" type="checkbox" checked="checked" /><span class="switcher-indicator"></span><span class="switcher-label--on">ON</span><span class="switcher-label--off">OFF</span>
+                    </label>
+                  </li>
+                  <li class="setting__item"><span>New comments</span>
+                    <label class="switcher-control">
+                      <input class="switcher-input" type="checkbox" checked="checked" /><span class="switcher-indicator"></span><span class="switcher-label--on">ON</span><span class="switcher-label--off">OFF</span>
+                    </label>
+                  </li>
+                  <li class="setting__item"><span>Chat messages</span>
+                    <label class="switcher-control">
+                      <input class="switcher-input" type="checkbox" /><span class="switcher-indicator"></span><span class="switcher-label--on">ON</span><span class="switcher-label--off">OFF</span>
+                    </label>
+                  </li>
+                </ul>
+              </div>
+              <div class="setting__workflow">
+                <div class="setting__heading">Workflow</div>
+                <ul class="setting__list">
+                  <li class="setting__item"><span>Deploy on commit</span>
+                    <label class="switcher-control">
+                      <input class="switcher-input" type="checkbox" /><span class="switcher-indicator"></span><span class="switcher-label--on">ON</span><span class="switcher-label--off">OFF</span>
+                    </label>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="main">
+      <div class="statistic-section">
+        <div class="row">
+          <div class="col-12 col-lg-6 col-xl-3">
+            <div class="widget">
+              <div class="widget__chart js-sparkline" data-set="{&quot;data&quot;:[0,5,3,7,5,10,3,6,5,10],&quot;option&quot;:{&quot;width&quot;:&quot;85&quot;,&quot;height&quot;:&quot;35&quot;,&quot;lineColor&quot;:&quot;#4285f4&quot;,&quot;highlightSpotColor&quot;:&quot;#4285f4&quot;,&quot;highlightLineColor&quot;:&quot;#4285f4&quot;,&quot;fillColor&quot;:false,&quot;spotColor&quot;:false,&quot;minSpotColor&quot;:false,&quot;maxSpotColor&quot;:false,&quot;lineWidth&quot;:1.15}}" width="85" height="35"></div>
+              <div class="widget__info">
+                <div class="widget__name">New Users</div>
+                <div class="widget__value"><span class="widget__status widget__status--equal zmdi zmdi-chevron-right"></span><span>113</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-6 col-xl-3">
+            <div class="widget">
+              <div class="widget__chart js-sparkline" data-set="{&quot;data&quot;:[5,8,7,10,9,10,8,6,4,6,8,7,6,8],&quot;option&quot;:{&quot;type&quot;:&quot;bar&quot;,&quot;width&quot;:&quot;85&quot;,&quot;height&quot;:&quot;35&quot;,&quot;barWidth&quot;:3,&quot;barSpacing&quot;:3,&quot;chartRangeMin&quot;:0,&quot;barColor&quot;:&quot;#fbbc05&quot;}}" width="85" height="35"></div>
+              <div class="widget__info">
+                <div class="widget__name">Monthly Sales</div>
+                <div class="widget__value"><span class="widget__status widget__status--increase zmdi zmdi-chevron-up"></span><span>80%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-6 col-xl-3">
+            <div class="widget">
+              <div class="widget__chart js-sparkline" data-set="{&quot;data&quot;:[2,3,4,5,4,3,2,3,4,5,6,5,4,3,4,5,6,5,4,4,5],&quot;option&quot;:{&quot;type&quot;:&quot;discrete&quot;,&quot;width&quot;:&quot;85&quot;,&quot;height&quot;:&quot;35&quot;,&quot;lineHeight&quot;:20,&quot;lineColor&quot;:&quot;#34a853&quot;,&quot;xwidth&quot;:18}}" width="85" height="35"></div>
+              <div class="widget__info">
+                <div class="widget__name">Impressions</div>
+                <div class="widget__value"><span class="widget__status widget__status--increase zmdi zmdi-chevron-up"></span><span>532</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-6 col-xl-3">
+            <div class="widget">
+              <div class="widget__chart js-sparkline" data-set="{&quot;data&quot;:[2,5,3,7,5,10,3,6,5,7],&quot;option&quot;:{&quot;width&quot;:&quot;85&quot;,&quot;height&quot;:&quot;35&quot;,&quot;lineColor&quot;:&quot;#ea4335&quot;,&quot;highlightSpotColor&quot;:&quot;#ea4335&quot;,&quot;highlightLineColor&quot;:&quot;#ea4335&quot;,&quot;fillColor&quot;:false,&quot;spotColor&quot;:false,&quot;minSpotColor&quot;:false,&quot;maxSpotColor&quot;:false,&quot;lineWidth&quot;:1.15}}" width="85" height="35"></div>
+              <div class="widget__info">
+                <div class="widget__name">Downloads</div>
+                <div class="widget__value"><span class="widget__status widget__status--descrease zmdi zmdi-chevron-down"></span><span>113</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="recent-movement">
+            <div class="recent-movement__head"><span class="recent-movement__title">Recent Movement</span>
+              <div class="recent-movement__toolbar">
+                <div class="button-group">
+                  <button class="button" type="button">Week</button>
+                  <button class="button active" type="button">Month</button>
+                  <button class="button" type="button">Year</button>
+                </div>
+                <div class="button-group">
+                  <button class="button" type="button">Today</button>
+                </div>
+                <div class="tools">
+                  <div class="dropdown d-none"><a class="btn dropdown-toggle" href="#" role="button" data-toggle="dropdown"><span class="zmdi zmdi-more-vert"></span></a>
+                    <div class="dropdown-menu"><a class="dropdown-item" href="#">Week</a><a class="dropdown-item" href="#">Month</a><a class="dropdown-item" href="#">Year</a>
+                      <div class="dropdown-devider"></div><a class="dropdown-item" href="#">Today</a>
+                    </div>
+                  </div><span class="tools__icon zmdi zmdi-chevron-down"></span><span class="tools__icon js-toggle-reload zmdi zmdi-refresh-sync"></span><span class="tools__icon zmdi zmdi-close"></span>
+                </div>
+              </div>
+            </div>
+            <div class="recent-movement__content">
+              <div class="recent-movement__info">
+                <ul class="recent-movement__legend-list">
+                  <li class="recent-movement__legend"><span class="recent-movement__legend-icon" style="background-color: #4386f4"></span><span>Purchases</span></li>
+                  <li class="recent-movement__legend"><span class="recent-movement__legend-icon" style="background-color: #81adf8"></span><span>Plans</span></li>
+                  <li class="recent-movement__legend"><span class="recent-movement__legend-icon" style="background-color: #a2c3fa"></span><span>Services</span></li>
+                </ul>
+                <ul class="recent-movement__counter-group">
+                  <li class="counter"><span class="counter__value">25%</span><span class="counter__title">Purchase</span></li>
+                  <li class="counter"><span class="counter__value">5%</span><span class="counter__title">Plans</span></li>
+                  <li class="counter"><span class="counter__value">5%</span><span class="counter__title">Services</span></li>
+                </ul>
+              </div>
+              <div class="recent-movement__chart js-movement-chart" data-set="{&quot;purchasesChart&quot;:{&quot;data&quot;:[[1,35],[2,60],[3,40],[4,65],[5,45],[6,75],[7,35],[8,40],[9,60]],&quot;showLabels&quot;:true,&quot;label&quot;:&quot;Purchases&quot;,&quot;labelPlacement&quot;:&quot;below&quot;,&quot;canvasRender&quot;:true,&quot;cColor&quot;:&quot;#FFFFFF&quot;},&quot;plansChart&quot;:{&quot;data&quot;:[[1,20],[2,40],[3,25],[4,45],[5,25],[6,50],[7,35],[8,60],[9,30]],&quot;showLabels&quot;:true,&quot;label&quot;:&quot;Plans&quot;,&quot;labelPlacement&quot;:&quot;below&quot;,&quot;canvasRender&quot;:true,&quot;cColor&quot;:&quot;#FFFFFF&quot;},&quot;servicesChart&quot;:{&quot;data&quot;:[[1,35],[2,15],[3,20],[4,30],[5,15],[6,18],[7,28],[8,10],[9,30]],&quot;showLabels&quot;:true,&quot;label&quot;:&quot;Services&quot;,&quot;labelPlacement&quot;:&quot;below&quot;,&quot;canvasRender&quot;:true,&quot;cColor&quot;:&quot;#FFFFFF&quot;},&quot;colors&quot;:[&quot;#4386f4&quot;,&quot;#81adf8&quot;,&quot;#a2c3fa&quot;]}" style="height: 260px; width: 100%;"></div>
+            </div>
+            <div class="recent-movement__reload">
+              <svg class="spinner" width="40px" height="40px" viewBox="0 0 66 66">
+                <circle class="circle spinner__icon" fill="none" stroke-width="4" stroke-linecap="round" cx="33" cy="33" r="30"></circle>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-lg-6">
+          <div class="card-custom">
+            <div class="card-custom__header">
+              <div class="card-custom__title">Purchases</div>
+              <div class="tools"><span class="tools__icon zmdi zmdi-download"></span>
+                <div class="dropdown action-more"><a class="dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false"><span class="action-more__icon zmdi zmdi-more-vert"></span></a>
+                  <div class="dropdown-menu action-more__dropdown-menu" role="menu"><a class="dropdown-item" href="#">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a>
+                    <div class="dropdown-divider"></div><a class="dropdown-item" href="#">Separated link</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-custom__body table-responsive">
+              <table class="table table-striped table-borderless card-custom__table">
+                <thead>
+                  <tr>
+                    <th style="width:40%;">Product</th>
+                    <th class="text-right">Price</th>
+                    <th style="width:20%;">Date</th>
+                    <th style="width:20%;">State</th>
+                    <th style="width:5%;"></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Sony Xperia M4</td>
+                    <td class="text-right">$149</td>
+                    <td>Aug 23, 2018</td>
+                    <td class="task-status task-status--completed">completed</td>
+                    <td><a class="action" href="#"><span class="action__icon zmdi zmdi-plus-circle-o"></span></a></td>
+                  </tr>
+                  <tr>
+                    <td>Apple iPhone 6</td>
+                    <td class="text-right">$535</td>
+                    <td>Aug 20, 2018</td>
+                    <td class="task-status task-status--completed">completed</td>
+                    <td><a class="action" href="#"><span class="action__icon zmdi zmdi-plus-circle-o"></span></a></td>
+                  </tr>
+                  <tr>
+                    <td>Samsung Galaxy S7</td>
+                    <td class="text-right">$583</td>
+                    <td>Aug 18, 2018</td>
+                    <td class="task-status task-status--pending">pending</td>
+                    <td><a class="action" href="#"><span class="action__icon zmdi zmdi-plus-circle-o"></span></a></td>
+                  </tr>
+                  <tr>
+                    <td>HTC One M9</td>
+                    <td class="text-right">$350</td>
+                    <td>Aug 15, 2018</td>
+                    <td class="task-status task-status--pending">pending</td>
+                    <td><a class="action" href="#"><span class="action__icon zmdi zmdi-plus-circle-o"></span></a></td>
+                  </tr>
+                  <tr>
+                    <td>Sony Xperia Z5</td>
+                    <td class="text-right">$495</td>
+                    <td>Aug 13, 2018</td>
+                    <td class="task-status task-status--cancelled">cancelled</td>
+                    <td><a class="action" href="#"><span class="action__icon zmdi zmdi-plus-circle-o"></span></a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-6">
+          <div class="card-custom">
+            <div class="card-custom__header">
+              <div class="card-custom__title">Latest Commits</div>
+              <div class="tools"><span class="tools__icon zmdi zmdi-download"></span>
+                <div class="dropdown action-more"><a class="dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false"><span class="action-more__icon zmdi zmdi-more-vert"></span></a>
+                  <div class="dropdown-menu action-more__dropdown-menu" role="menu"><a class="dropdown-item" href="#">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a>
+                    <div class="dropdown-divider"></div><a class="dropdown-item" href="#">Separated link</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-custom__body table-responsive">
+              <table class="table table-striped card-custom__table">
+                <thead>
+                  <tr>
+                    <th style="width: 37%;">User</th>
+                    <th style="width: 36%;">Commit</th>
+                    <th>Date</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <div class="user-avatar user-avatar--xs card-custom__avatar"><img class="user-avatar__img" src="./images/avatar6.png"></div><span>Penelope Thornton</span>
+                    </td>
+                    <td>Topbar dropdown style</td>
+                    <td>Aug 16, 2018</td>
+                    <td><a class="action" href="#"><span class="action__icon zmdi zmdi-github-alt"></span></a></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="user-avatar user-avatar--xs card-custom__avatar"><img class="user-avatar__img" src="./images/avatar4.png"></div><span>Benji Harper</span>
+                    </td>
+                    <td>Left sidebar adjusments</td>
+                    <td>Jul 15, 2018</td>
+                    <td><a class="action" href="#"><span class="action__icon zmdi zmdi-github-alt"></span></a></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="user-avatar user-avatar--xs card-custom__avatar"><img class="user-avatar__img" src="./images/avatar5.png"></div><span>Justine Myranda</span>
+                    </td>
+                    <td>Main structure markup</td>
+                    <td>Jul 28, 2018</td>
+                    <td><a class="action" href="#"><span class="action__icon zmdi zmdi-github-alt"></span></a></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="user-avatar user-avatar--xs card-custom__avatar"><img class="user-avatar__img" src="./images/avatar3.png"></div><span>Sherwood Clifford</span>
+                    </td>
+                    <td>Initial commit</td>
+                    <td>Jun 30, 2018</td>
+                    <td><a class="action" href="#"><span class="action__icon zmdi zmdi-github-alt"></span></a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/main.js"></script>
+  </body>
+</html>

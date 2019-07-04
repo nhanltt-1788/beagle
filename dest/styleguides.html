@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Styleguides</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="Styleguides" />
+    <meta name="keywords" content="Styleguides" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="icon" href="/logo-fav.png" />
+    <link rel="stylesheet" href="css/main.css" />
+    <style>
+      body {
+        background-color: #fff;
+      }
+
+      .code-example {
+        margin-bottom: 25px;
+      }
+
+      .code-example .demo {
+        box-sizing: border-box;
+        padding: 1.5rem;
+        position: relative;
+        border: 1px solid rgba(0, 0, 0, .125);
+        border-radius: .25rem .25rem 0 0;
+      }
+
+      .code-example pre {
+        margin: 0;
+        background-color: rgba(0, 0, 0, .125);
+        padding: 15px;
+        border-radius: 0 0 0.25rem .25rem;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row justify-content-between align-items-center pt-4 pb-4">
+        <div class="col-auto mr-auto">
+          <h2>{ Project Name } Style Guides</h2>
+        </div>
+        <div class="col-auto"><a class="btn btn-success btn-sm" href="links.html">Back to list of page </a></div>
+      </div>
+      <div class="row">
+        <div class="col-2">
+          <div class="list-group" id="v-pills-tab" role="tablist" aria-orientation="vertical" style="position: sticky; top: 0"><a class="list-group-item active" data-toggle="pill" role="tab" aria-selected="true" id="v-pills-colors-tab" href="#v-pills-colors" aria-controls="v-pills-colors">Colors</a><a class="list-group-item" data-toggle="pill" role="tab" aria-selected="true" id="v-pills-buttons-tab" href="#v-pills-buttons" aria-controls="v-pills-buttons">Buttons</a><a class="list-group-item" data-toggle="pill" role="tab" aria-selected="true" id="v-pills-checkboxes-tab" href="#v-pills-checkboxes" aria-controls="v-pills-checkboxes">Checkboxes</a><a class="list-group-item" data-toggle="pill" role="tab" aria-selected="true" id="v-pills-switchers-tab" href="#v-pills-switchers" aria-controls="v-pills-switchers">Switchers</a>
+          </div>
+        </div>
+        <div class="col-10">
+          <div class="tab-content" id="v-pills-tabContent">
+            <div class="tab-pane fade show active" role="tabpanel" id="v-pills-colors" aria-labelledby="v-pills-colors-tab">
+              <div class="row">
+                <div class="col-2">
+                  <div class="code-example">
+                    <div class="demo" style="background-color: #fff; width: 100%; height: 100px"></div>
+                    <pre><code>$white: #fff</code></pre>
+                  </div>
+                </div>
+                <div class="col-2">
+                  <div class="code-example">
+                    <div class="demo" style="background-color: #000; width: 100%; height: 100px"></div>
+                    <pre><code>$black: #000</code></pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" role="tabpanel" id="v-pills-buttons" aria-labelledby="v-pills-buttons-tab">
+              <h2>Buttons Type</h2>
+              <div class="row">
+                <div class="col-3">
+                  <div class="code-example">
+                    <div class="demo">
+                      <button class="button button--primary" type="button">primary
+                      </button>
+                    </div>
+                    <pre><code>+button({
+  text: 'primary',
+  type: 'primary' 
+})</code></pre>
+                  </div>
+                </div>
+                <div class="col-3">
+                  <div class="code-example">
+                    <div class="demo">
+                      <button class="button button--danger" type="button">danger
+                      </button>
+                    </div>
+                    <pre><code>+button({
+  text: 'danger',
+  type: 'danger' 
+})</code></pre>
+                  </div>
+                </div>
+                <div class="col-3">
+                  <div class="code-example">
+                    <div class="demo">
+                      <button class="button button--warning" type="button">warning
+                      </button>
+                    </div>
+                    <pre><code>+button({
+  text: 'warning',
+  type: 'warning' 
+})</code></pre>
+                  </div>
+                </div>
+                <div class="col-3">
+                  <div class="code-example">
+                    <div class="demo">
+                      <button class="button button--success" type="button">success
+                      </button>
+                    </div>
+                    <pre><code>+button({
+  text: 'success',
+  type: 'success' 
+})</code></pre>
+                  </div>
+                </div>
+              </div>
+              <h2>Button Disable</h2>
+              <div class="row">
+                <div class="col-3">
+                  <div class="code-example">
+                    <div class="demo">
+                      <button class="button button--primary" type="button" disabled="disabled">Disabled
+                      </button>
+                    </div>
+                    <pre><code>+button({
+  text: 'Disabled', 
+  disabled: 'disabled',
+  type: 'primary'
+})</code></pre>
+                  </div>
+                </div>
+                <div class="col-3">
+                  <div class="code-example">
+                    <div class="demo">
+                      <button class="button button--danger" type="button" disabled="disabled">Disabled
+                      </button>
+                    </div>
+                    <pre><code>+button({
+  text: 'Disabled', 
+  disabled: 'disabled',
+  type: 'danger'
+})</code></pre>
+                  </div>
+                </div>
+                <div class="col-3">
+                  <div class="code-example">
+                    <div class="demo">
+                      <button class="button button--warning" type="button" disabled="disabled">Disabled
+                      </button>
+                    </div>
+                    <pre><code>+button({
+  text: 'Disabled', 
+  disabled: 'disabled',
+  type: 'warning'
+})</code></pre>
+                  </div>
+                </div>
+                <div class="col-3">
+                  <div class="code-example">
+                    <div class="demo">
+                      <button class="button button--success" type="button" disabled="disabled">Disabled
+                      </button>
+                    </div>
+                    <pre><code>+button({
+  text: 'Disabled', 
+  disabled: 'disabled',
+  type: 'success'
+})</code></pre>
+                  </div>
+                </div>
+              </div>
+              <h2>Button Size</h2>
+              <div class="row">
+                <div class="col-3">
+                  <div class="code-example">
+                    <div class="demo">
+                      <button class="button button--primary button--sm" type="button">Button
+                      </button>
+                    </div>
+                    <pre><code>+button({
+  text: 'Button',
+  type: 'primary',
+  size: 'sm' 
+})</code></pre>
+                  </div>
+                </div>
+                <div class="col-3">
+                  <div class="code-example">
+                    <div class="demo">
+                      <button class="button button--primary button--md" type="button">Button
+                      </button>
+                    </div>
+                    <pre><code>+button({
+  text: 'Button',
+  type: 'primary',
+  size: 'md' 
+})</code></pre>
+                  </div>
+                </div>
+                <div class="col-3">
+                  <div class="code-example">
+                    <div class="demo">
+                      <button class="button button--primary button--lg" type="button">Button
+                      </button>
+                    </div>
+                    <pre><code>+button({
+  text: 'Button',
+  type: 'primary',
+  size: 'lg' 
+})</code></pre>
+                  </div>
+                </div>
+              </div>
+              <h2>Button Icon</h2>
+              <div class="row">
+                <div class="col-3">
+                  <div class="code-example">
+                    <div class="demo">
+                      <button class="button button--primary" type="button"><i class="fas fa-cloud-upload-alt"></i>This Button
+                      </button>
+                    </div>
+                    <pre><code>+button({
+  text: 'This Button', 
+  type: 'primary'
+  iconFont: 'fas fa-cloud-upload-alt'
+})</code></pre>
+                  </div>
+                </div>
+                <div class="col-3">
+                  <div class="code-example">
+                    <div class="demo">
+                      <button class="button button--danger" type="button"><i class="fas fa-cloud-upload-alt"></i>This Button
+                      </button>
+                    </div>
+                    <pre><code>+button({
+  text: 'This Button', 
+  type: 'danger'
+  iconFont: 'fas fa-cloud-upload-alt'
+})</code></pre>
+                  </div>
+                </div>
+                <div class="col-3">
+                  <div class="code-example">
+                    <div class="demo">
+                      <button class="button button--warning" type="button"><i class="fas fa-cloud-upload-alt"></i>This Button
+                      </button>
+                    </div>
+                    <pre><code>+button({
+  text: 'This Button', 
+  type: 'warning'
+  iconFont: 'fas fa-cloud-upload-alt'
+})</code></pre>
+                  </div>
+                </div>
+                <div class="col-3">
+                  <div class="code-example">
+                    <div class="demo">
+                      <button class="button button--success" type="button"><i class="fas fa-cloud-upload-alt"></i>This Button
+                      </button>
+                    </div>
+                    <pre><code>+button({
+  text: 'This Button', 
+  type: 'success'
+  iconFont: 'fas fa-cloud-upload-alt'
+})</code></pre>
+                  </div>
+                </div>
+              </div>
+              <h2>Button Round</h2>
+              <div class="row">
+                <div class="col-3">
+                  <div class="code-example">
+                    <div class="demo">
+                      <button class="button button--primary button--md button--rounded" type="button"><i class="fas fa-cloud-upload-alt"></i>Button
+                      </button>
+                    </div>
+                    <pre><code>+button({
+  text: 'Button',
+  type: 'primary',
+  size: 'md',
+  iconFont: 'fas fa-cloud-upload-alt',
+  round: true
+})</code></pre>
+                  </div>
+                </div>
+                <div class="col-3">
+                  <div class="code-example">
+                    <div class="demo">
+                      <button class="button button--danger button--md button--rounded" type="button"><i class="fas fa-cloud-upload-alt"></i>Button
+                      </button>
+                    </div>
+                    <pre><code>+button({
+  text: 'Button',
+  type: 'danger',
+  size: 'md',
+  iconFont: 'fas fa-cloud-upload-alt',
+  round: true
+})</code></pre>
+                  </div>
+                </div>
+                <div class="col-3">
+                  <div class="code-example">
+                    <div class="demo">
+                      <button class="button button--warning button--md button--rounded" type="button"><i class="fas fa-cloud-upload-alt"></i>Button
+                      </button>
+                    </div>
+                    <pre><code>+button({
+  text: 'Button',
+  type: 'warning',
+  size: 'md',
+  iconFont: 'fas fa-cloud-upload-alt',
+  round: true
+})</code></pre>
+                  </div>
+                </div>
+                <div class="col-3">
+                  <div class="code-example">
+                    <div class="demo">
+                      <button class="button button--success button--md button--rounded" type="button"><i class="fas fa-cloud-upload-alt"></i>Button
+                      </button>
+                    </div>
+                    <pre><code>+button({
+  text: 'Button',
+  type: 'success',
+  size: 'md',
+  iconFont: 'fas fa-cloud-upload-alt',
+  round: true
+})</code></pre>
+                  </div>
+                </div>
+              </div>
+              <h2>Button Dropdown</h2>
+              <div class="row">
+                <div class="col-3">
+                  <div class="code-example">
+                    <div class="demo">
+                      <div class="dropdown">
+                        <button class="button button--primary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-cloud-upload-alt"></i>Button
+                        </button>
+                        <div class="dropdown-menu"><a class="dropdown-item" href="#">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a>
+                          <div class="dropdown-divider"></div><a class="dropdown-item" href="#">Separated link</a>
+                        </div>
+                      </div>
+                    </div>
+                    <pre><code>+button({
+  text: 'Button',
+  type: 'primary',
+  size: 'md',
+  iconFont: 'fas fa-cloud-upload-alt',
+})</code></pre>
+                  </div>
+                </div>
+                <div class="col-3">
+                  <div class="code-example">
+                    <div class="demo">
+                      <div class="dropdown">
+                        <button class="button button--danger dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-cloud-upload-alt"></i>Button
+                        </button>
+                        <div class="dropdown-menu"><a class="dropdown-item" href="#">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a>
+                          <div class="dropdown-divider"></div><a class="dropdown-item" href="#">Separated link</a>
+                        </div>
+                      </div>
+                    </div>
+                    <pre><code>+button({
+  text: 'Button',
+  type: 'danger',
+  size: 'md',
+  iconFont: 'fas fa-cloud-upload-alt',
+})</code></pre>
+                  </div>
+                </div>
+                <div class="col-3">
+                  <div class="code-example">
+                    <div class="demo">
+                      <div class="dropdown">
+                        <button class="button button--warning dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-cloud-upload-alt"></i>Button
+                        </button>
+                        <div class="dropdown-menu"><a class="dropdown-item" href="#">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a>
+                          <div class="dropdown-divider"></div><a class="dropdown-item" href="#">Separated link</a>
+                        </div>
+                      </div>
+                    </div>
+                    <pre><code>+button({
+  text: 'Button',
+  type: 'warning',
+  size: 'md',
+  iconFont: 'fas fa-cloud-upload-alt',
+})</code></pre>
+                  </div>
+                </div>
+                <div class="col-3">
+                  <div class="code-example">
+                    <div class="demo">
+                      <div class="dropdown">
+                        <button class="button button--success dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-cloud-upload-alt"></i>Button
+                        </button>
+                        <div class="dropdown-menu"><a class="dropdown-item" href="#">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a>
+                          <div class="dropdown-divider"></div><a class="dropdown-item" href="#">Separated link</a>
+                        </div>
+                      </div>
+                    </div>
+                    <pre><code>+button({
+  text: 'Button',
+  type: 'success',
+  size: 'md',
+  iconFont: 'fas fa-cloud-upload-alt',
+})</code></pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" role="tabpanel" id="v-pills-checkboxes" aria-labelledby="v-pills-checkboxes-tab">
+              <h2>Checkbox Normal</h2>
+              <div class="row">
+                <div class="col-3">
+                  <div class="code-example">
+                    <div class="demo">
+                      <div class="form-group custom-checkbox">
+                        <input class="custom-checkbox__input" type="checkbox" id="cb-1" checked="checked" />
+                        <label class="custom-checkbox__label" for="cb-1">Option 1</label>
+                      </div>
+                      <div class="form-group custom-checkbox">
+                        <input class="custom-checkbox__input" type="checkbox" id="cb-2" />
+                        <label class="custom-checkbox__label" for="cb-2">Option 2</label>
+                      </div>
+                      <div class="form-group custom-checkbox">
+                        <input class="custom-checkbox__input" type="checkbox" id="cb-3" disabled="disabled" />
+                        <label class="custom-checkbox__label" for="cb-3">Option 3</label>
+                      </div>
+                      <div class="form-group custom-checkbox custom-checkbox--line-through"><i class="custom-checkbox__icon zmdi zmdi-delete"></i>
+                        <input class="custom-checkbox__input" type="checkbox" id="cb-4" />
+                        <label class="custom-checkbox__label" for="cb-4">Option 4</label>
+                      </div>
+                    </div>
+                    <pre><code>+group-input-checkbox({
+  id: 'cb-1',
+  label: 'Option 1',
+  checked: true 
+ })
++group-input-checkbox({
+  id: 'cb-2',
+  label: 'Option 2',
+ })
++group-input-checkbox({
+  id: 'cb-3',
+  label: 'Option 3',
+  disabled: true 
+ })
++group-input-checkbox({
+ id: 'cb-4',
+ label: 'Option 4',
+ deleteIcon: 'zmdi zmdi-delete'
+ })(class='custom-checkbox--line-through')</code></pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" role="tabpanel" id="v-pills-switchers" aria-labelledby="v-pills-switchers-tab">
+              <h2>Switcher</h2>
+              <div class="row">
+                <div class="col-3">
+                  <div class="code-example">
+                    <div class="demo">
+                      <label class="switcher-control">
+                        <input class="switcher-input" type="checkbox" /><span class="switcher-indicator"></span><span class="switcher-label--on">ON</span><span class="switcher-label--off">OFF</span>
+                      </label>
+                    </div>
+                    <pre><code>+switcher({})</code></pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/main.js"></script>
+  </body>
+</html>
